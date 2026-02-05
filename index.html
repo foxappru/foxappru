@@ -7,28 +7,37 @@
   <title>Foxapp</title>
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#222222" />
-  <script type="module" crossorigin src="./index-CgGfcq3x.js"></script>
-  <link rel="stylesheet" crossorigin href="./index-BLtQfbwF.css">
+  <link rel="shortcut icon" href="./icon-192-DJ-I_X50.png" type="image/x-icon">
+  <script type="module" crossorigin src="./index-CQbCOW2a.js"></script>
+  <link rel="stylesheet" crossorigin href="./index-z9DBRlBp.css">
 </head>
 
 <body>
   <div class="startScreen">
-    <h1>Foxapp</h1>
-    <p>Choose dictionary and start playing!</p>
-    <div id="dictionaries"></div>
-    <p>Find other dictionaries:</p>
-    <form action="">
-      <input id="input" type="text" placeholder="GitHub username" />
-      <button id="search">Search</button>
-      <button id="reset">Reset</button>
-    </form>
-    <div id="options">
-      <div class="option">
-        <input type="checkbox" id="audioCheckbox" checked />
-        <label for="audioCheckbox">Sounds</label>
+    <section id="section">
+      <h1>Foxapp</h1>
+      <p id="rules">In this game, you need to defend a small village. <br> Shoot words with their translations as fast
+        as you can.</p>
+      <p>Choose dictionary and start playing!</p>
+      <div id="dictionaries"></div>
+      <p>Find other dictionaries:</p>
+      <form action="">
+        <input id="input" type="text" placeholder="GitHub username" />
+        <button id="search">Search</button>
+        <button id="reset">Reset</button>
+        <p>You can add your dictionaries <a href="https://github.com/foxappru/foxapp-data" target="_blank"
+            rel="noopener">like I did here</a>.</p>
+      </form>
+      <div id="options">
+        <div class="option">
+          <input type="checkbox" id="audioCheckbox" checked />
+          <label for="audioCheckbox">Sounds</label>
+        </div>
       </div>
-    </div>
+    </section>
+    <canvas id="bgCanvas"></canvas>
   </div>
+  <div id="hint"></div>
   <canvas id="game"></canvas>
 </body>
 
